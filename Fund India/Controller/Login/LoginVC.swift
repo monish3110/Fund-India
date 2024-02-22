@@ -16,7 +16,6 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
         loginWebview.navigationDelegate = self
         let webUrl = "\(APIManager.shared.loginURL)\(API.githubOauthApi)?client_id=\(NetworkManager.shared.clientID)"
@@ -36,10 +35,7 @@ class LoginVC: UIViewController {
     
     
     func exchangeCodeForToken(code: String) {
-        
-        print("normalcodeeeeeeeee",code)
         let loginData = LoginModel(client_id: NetworkManager.shared.clientID, client_secret: NetworkManager.shared.clientSecret, code: code)
-        print("params",loginData.toDictionary())
         NetworkManager.shared.postApiRequest(url: APIManager.shared.loginURL + API.getAcessToken, parameters: loginData.toDictionary()) { (response) in
             switch(response?.result) {
             case .success(_):

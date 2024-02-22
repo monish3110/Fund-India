@@ -13,9 +13,9 @@ class NetworkManager: NSObject {
     
     static let shared = NetworkManager()
     let reachabilityManager = NetworkReachabilityManager()
-    var tokenValue = "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"
-    let clientID = "7f0715dce47dee4dad9f"
-    let clientSecret = "074d8bed3a218ed5e28bdcabf5cd2c2e2c8b73f8"
+    var tokenValue = ""
+    let clientID = ProcessInfo.processInfo.environment["GITHUB_CLIENT_ID"] ?? ""
+    let clientSecret = ProcessInfo.processInfo.environment["GITHUB_CLIENT_SECRET"] ?? ""
     
     func hasConnected(shouldAlert: Bool) -> Bool{
         if reachabilityManager?.isReachable == true{
@@ -25,7 +25,6 @@ class NetworkManager: NSObject {
     }
     
     func configureCurrentSession() -> HTTPHeaders {
-        print("headertokenvalue",tokenValue)
         let manager = Session.default
         manager.session.configuration.timeoutIntervalForRequest = 10800
         manager.session.configuration.timeoutIntervalForResource = 10800
@@ -43,12 +42,12 @@ class NetworkManager: NSObject {
             completion(sessionData)
         }
     }
-
+    
     func postApiRequest(url:String, parameters:Dictionary<String, Any>,completion:@escaping completionBlock) {
         let headers = configureCurrentSession()
         AF.request(url,method: .post,parameters: parameters, encoding : JSONEncoding.default, headers: headers).responseJSON { (sessionData) in
             completion(sessionData)
         }
     }
-
+    
 }
