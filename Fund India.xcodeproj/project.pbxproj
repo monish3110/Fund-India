@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C5C659E7942841656E5DAD3F /* Pods_Fund_India.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A047200068267B7DE9D5B96 /* Pods_Fund_India.framework */; };
+		D269AF5E2B84A02B00E3C11A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D269AF5D2B84A02B00E3C11A /* AppDelegate.swift */; };
+		D269AF602B84A02B00E3C11A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D269AF5F2B84A02B00E3C11A /* SceneDelegate.swift */; };
+		D269AF672B84A02E00E3C11A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D269AF662B84A02E00E3C11A /* Assets.xcassets */; };
+		D269AF6A2B84A02E00E3C11A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D269AF682B84A02E00E3C11A /* LaunchScreen.storyboard */; };
+		D269AF7B2B84A37400E3C11A /* RepoListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D269AF792B84A37400E3C11A /* RepoListTableCell.swift */; };
+		D269AF7C2B84A37400E3C11A /* RepoListTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D269AF7A2B84A37400E3C11A /* RepoListTableCell.xib */; };
+		D269AF7F2B84AEAA00E3C11A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D269AF7E2B84AEAA00E3C11A /* NetworkManager.swift */; };
+		D27D45C12B84B613008DA32B /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27D45C02B84B613008DA32B /* ApiManager.swift */; };
+		D27D45C32B84C957008DA32B /* RepoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27D45C22B84C957008DA32B /* RepoListModel.swift */; };
+		D27D45C72B860CD7008DA32B /* RepoDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27D45C52B860CD7008DA32B /* RepoDetailVC.swift */; };
+		D27D45C82B860CD7008DA32B /* RepoDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D27D45C62B860CD7008DA32B /* RepoDetailVC.xib */; };
+		D27D45CD2B8614C4008DA32B /* Extension-UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27D45CC2B8614C4008DA32B /* Extension-UIView.swift */; };
+		D27D45D22B87230D008DA32B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27D45D02B87230D008DA32B /* LoginVC.swift */; };
+		D27D45D32B87230D008DA32B /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D27D45D12B87230D008DA32B /* LoginVC.xib */; };
+		D27D45D52B8737AC008DA32B /* Extension-Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27D45D42B8737AC008DA32B /* Extension-Url.swift */; };
+		D27D45D72B873A2E008DA32B /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27D45D62B873A2E008DA32B /* LoginModel.swift */; };
+		D27D45DB2B874002008DA32B /* RepositoryListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27D45D92B874002008DA32B /* RepositoryListVC.swift */; };
+		D27D45DC2B874002008DA32B /* RepositoryListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D27D45DA2B874002008DA32B /* RepositoryListVC.xib */; };
+		D27D45DE2B874154008DA32B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D27D45DD2B874154008DA32B /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0959A02182D9460EB75FB79C /* Pods-Fund India.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fund India.release.xcconfig"; path = "Target Support Files/Pods-Fund India/Pods-Fund India.release.xcconfig"; sourceTree = "<group>"; };
+		3A047200068267B7DE9D5B96 /* Pods_Fund_India.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fund_India.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		933614B8D0383BF025A06686 /* Pods-Fund India.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fund India.debug.xcconfig"; path = "Target Support Files/Pods-Fund India/Pods-Fund India.debug.xcconfig"; sourceTree = "<group>"; };
+		D269AF5A2B84A02B00E3C11A /* Fund India.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fund India.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D269AF5D2B84A02B00E3C11A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D269AF5F2B84A02B00E3C11A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D269AF662B84A02E00E3C11A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D269AF692B84A02E00E3C11A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D269AF6B2B84A02E00E3C11A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D269AF792B84A37400E3C11A /* RepoListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListTableCell.swift; sourceTree = "<group>"; };
+		D269AF7A2B84A37400E3C11A /* RepoListTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoListTableCell.xib; sourceTree = "<group>"; };
+		D269AF7E2B84AEAA00E3C11A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D27D45C02B84B613008DA32B /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		D27D45C22B84C957008DA32B /* RepoListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListModel.swift; sourceTree = "<group>"; };
+		D27D45C52B860CD7008DA32B /* RepoDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailVC.swift; sourceTree = "<group>"; };
+		D27D45C62B860CD7008DA32B /* RepoDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoDetailVC.xib; sourceTree = "<group>"; };
+		D27D45CC2B8614C4008DA32B /* Extension-UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension-UIView.swift"; sourceTree = "<group>"; };
+		D27D45D02B87230D008DA32B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		D27D45D12B87230D008DA32B /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		D27D45D42B8737AC008DA32B /* Extension-Url.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension-Url.swift"; sourceTree = "<group>"; };
+		D27D45D62B873A2E008DA32B /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		D27D45D92B874002008DA32B /* RepositoryListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListVC.swift; sourceTree = "<group>"; };
+		D27D45DA2B874002008DA32B /* RepositoryListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoryListVC.xib; sourceTree = "<group>"; };
+		D27D45DD2B874154008DA32B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D269AF572B84A02B00E3C11A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5C659E7942841656E5DAD3F /* Pods_Fund_India.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59EAE2FCEB744C22EAFF95E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				933614B8D0383BF025A06686 /* Pods-Fund India.debug.xcconfig */,
+				0959A02182D9460EB75FB79C /* Pods-Fund India.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D269AF512B84A02B00E3C11A = {
+			isa = PBXGroup;
+			children = (
+				D269AF5C2B84A02B00E3C11A /* Fund India */,
+				D269AF5B2B84A02B00E3C11A /* Products */,
+				59EAE2FCEB744C22EAFF95E2 /* Pods */,
+				F966AF5AD64C22171AD40672 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D269AF5B2B84A02B00E3C11A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D269AF5A2B84A02B00E3C11A /* Fund India.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D269AF5C2B84A02B00E3C11A /* Fund India */ = {
+			isa = PBXGroup;
+			children = (
+				D269AF7D2B84AE8700E3C11A /* App Manager */,
+				D269AF742B84A0B300E3C11A /* AppDelegate */,
+				D269AF712B84A05200E3C11A /* Model */,
+				D269AF722B84A07500E3C11A /* View */,
+				D269AF732B84A08100E3C11A /* Controller */,
+				D27D45C92B8613B2008DA32B /* Extensions */,
+				D269AF662B84A02E00E3C11A /* Assets.xcassets */,
+				D269AF682B84A02E00E3C11A /* LaunchScreen.storyboard */,
+				D27D45DD2B874154008DA32B /* Main.storyboard */,
+				D269AF6B2B84A02E00E3C11A /* Info.plist */,
+			);
+			path = "Fund India";
+			sourceTree = "<group>";
+		};
+		D269AF712B84A05200E3C11A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D27D45C22B84C957008DA32B /* RepoListModel.swift */,
+				D27D45D62B873A2E008DA32B /* LoginModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D269AF722B84A07500E3C11A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D269AF732B84A08100E3C11A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D27D45CF2B8722C6008DA32B /* Login */,
+				D27D45C42B860CA0008DA32B /* Repo Detail */,
+				D269AF752B84A0EB00E3C11A /* Repo List */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D269AF742B84A0B300E3C11A /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				D269AF5D2B84A02B00E3C11A /* AppDelegate.swift */,
+				D269AF5F2B84A02B00E3C11A /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		D269AF752B84A0EB00E3C11A /* Repo List */ = {
+			isa = PBXGroup;
+			children = (
+				D269AF782B84A35200E3C11A /* Cells */,
+				D27D45D92B874002008DA32B /* RepositoryListVC.swift */,
+				D27D45DA2B874002008DA32B /* RepositoryListVC.xib */,
+			);
+			path = "Repo List";
+			sourceTree = "<group>";
+		};
+		D269AF782B84A35200E3C11A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D269AF792B84A37400E3C11A /* RepoListTableCell.swift */,
+				D269AF7A2B84A37400E3C11A /* RepoListTableCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D269AF7D2B84AE8700E3C11A /* App Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D269AF7E2B84AEAA00E3C11A /* NetworkManager.swift */,
+				D27D45C02B84B613008DA32B /* ApiManager.swift */,
+			);
+			path = "App Manager";
+			sourceTree = "<group>";
+		};
+		D27D45C42B860CA0008DA32B /* Repo Detail */ = {
+			isa = PBXGroup;
+			children = (
+				D27D45C52B860CD7008DA32B /* RepoDetailVC.swift */,
+				D27D45C62B860CD7008DA32B /* RepoDetailVC.xib */,
+			);
+			path = "Repo Detail";
+			sourceTree = "<group>";
+		};
+		D27D45C92B8613B2008DA32B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D27D45CC2B8614C4008DA32B /* Extension-UIView.swift */,
+				D27D45D42B8737AC008DA32B /* Extension-Url.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D27D45CF2B8722C6008DA32B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D27D45D02B87230D008DA32B /* LoginVC.swift */,
+				D27D45D12B87230D008DA32B /* LoginVC.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F966AF5AD64C22171AD40672 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A047200068267B7DE9D5B96 /* Pods_Fund_India.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D269AF592B84A02B00E3C11A /* Fund India */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D269AF6E2B84A02E00E3C11A /* Build configuration list for PBXNativeTarget "Fund India" */;
+			buildPhases = (
+				2A54C41774B4B4534F142FB1 /* [CP] Check Pods Manifest.lock */,
+				D269AF562B84A02B00E3C11A /* Sources */,
+				D269AF572B84A02B00E3C11A /* Frameworks */,
+				D269AF582B84A02B00E3C11A /* Resources */,
+				9A298FB83ADB4D364271A687 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fund India";
+			productName = "Fund India";
+			productReference = D269AF5A2B84A02B00E3C11A /* Fund India.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D269AF522B84A02B00E3C11A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					D269AF592B84A02B00E3C11A = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = D269AF552B84A02B00E3C11A /* Build configuration list for PBXProject "Fund India" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D269AF512B84A02B00E3C11A;
+			productRefGroup = D269AF5B2B84A02B00E3C11A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D269AF592B84A02B00E3C11A /* Fund India */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D269AF582B84A02B00E3C11A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D27D45DE2B874154008DA32B /* Main.storyboard in Resources */,
+				D27D45D32B87230D008DA32B /* LoginVC.xib in Resources */,
+				D27D45DC2B874002008DA32B /* RepositoryListVC.xib in Resources */,
+				D27D45C82B860CD7008DA32B /* RepoDetailVC.xib in Resources */,
+				D269AF7C2B84A37400E3C11A /* RepoListTableCell.xib in Resources */,
+				D269AF6A2B84A02E00E3C11A /* LaunchScreen.storyboard in Resources */,
+				D269AF672B84A02E00E3C11A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A54C41774B4B4534F142FB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fund India-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A298FB83ADB4D364271A687 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fund India/Pods-Fund India-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fund India/Pods-Fund India-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fund India/Pods-Fund India-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D269AF562B84A02B00E3C11A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D27D45CD2B8614C4008DA32B /* Extension-UIView.swift in Sources */,
+				D27D45D72B873A2E008DA32B /* LoginModel.swift in Sources */,
+				D269AF7B2B84A37400E3C11A /* RepoListTableCell.swift in Sources */,
+				D27D45D52B8737AC008DA32B /* Extension-Url.swift in Sources */,
+				D27D45C32B84C957008DA32B /* RepoListModel.swift in Sources */,
+				D27D45D22B87230D008DA32B /* LoginVC.swift in Sources */,
+				D269AF7F2B84AEAA00E3C11A /* NetworkManager.swift in Sources */,
+				D269AF5E2B84A02B00E3C11A /* AppDelegate.swift in Sources */,
+				D27D45C12B84B613008DA32B /* ApiManager.swift in Sources */,
+				D27D45DB2B874002008DA32B /* RepositoryListVC.swift in Sources */,
+				D269AF602B84A02B00E3C11A /* SceneDelegate.swift in Sources */,
+				D27D45C72B860CD7008DA32B /* RepoDetailVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D269AF682B84A02E00E3C11A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D269AF692B84A02E00E3C11A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D269AF6C2B84A02E00E3C11A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D269AF6D2B84A02E00E3C11A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D269AF6F2B84A02E00E3C11A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 933614B8D0383BF025A06686 /* Pods-Fund India.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WS6B77MC3Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Fund India/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.monish.app.Fund-India";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D269AF702B84A02E00E3C11A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0959A02182D9460EB75FB79C /* Pods-Fund India.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WS6B77MC3Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Fund India/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.monish.app.Fund-India";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D269AF552B84A02B00E3C11A /* Build configuration list for PBXProject "Fund India" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D269AF6C2B84A02E00E3C11A /* Debug */,
+				D269AF6D2B84A02E00E3C11A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D269AF6E2B84A02E00E3C11A /* Build configuration list for PBXNativeTarget "Fund India" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D269AF6F2B84A02E00E3C11A /* Debug */,
+				D269AF702B84A02E00E3C11A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D269AF522B84A02B00E3C11A /* Project object */;
+}

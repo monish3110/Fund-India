@@ -1,0 +1,6 @@
+framework module Pods_Fund_India {
+  umbrella header "Pods-Fund India-umbrella.h"
+
+  export *
+  module * { export * }
+}
